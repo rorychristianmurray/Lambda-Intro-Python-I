@@ -7,7 +7,7 @@ method, and by using f-strings.
 x = 10
 y = 2.24552
 z = "I like turtles!"
-d = {"x": 10, "y":2.245552, "z": "I like turtles, sho do"}
+d = {"x": 10, "y": 2.245552, "z": "I like turtles, sho do"}
 
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
@@ -17,8 +17,8 @@ print("x is %s, y is %s, z is %s" % (x, y, z))
 
 # Use the 'format' string method to print the same thing
 
-print("x is {}, y is {}, z is {}".format (x, y, z))
-print("x is {2}, y is {0}, z is {1}".format (y, z, x))
+print("x is {}, y is {}, z is {}".format(x, y, z))
+print("x is {2}, y is {0}, z is {1}".format(y, z, x))
 print("x is {x}, y is {y}, z is {z}".format(**d))
 
 # Finally, print the same thing using an f-string
