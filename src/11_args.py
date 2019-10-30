@@ -18,6 +18,11 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 
+
+def f2(*args):
+    return sum(args)
+
+
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
 print(f2(1, 4, -12))            # Should print -7
@@ -26,6 +31,13 @@ print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 a = [7, 6, 5, 4]
 
 # What thing do you have to add to make this work?
+
+
+def f2a(*args):
+    for arg in args:
+        print("f2a arg:", arg)
+
+
 print(f2(a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
