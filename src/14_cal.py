@@ -22,3 +22,31 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+import argparse
+
+# create initial set-up for argparse
+
+parser = argparse.ArgumentParser(description="calendar tutorial")
+parser.add_argument("--m", default=1, type=int,
+                    help="This is the 'month' input", nargs="*")
+parser.add_argument("--y", default=2019, type=int,
+                    help="This is the 'year' input", nargs="*")
+
+# parse command line arguments
+args = parser.parse_args()
+print("args: ", args)
+
+month = args.m[0]
+year = args.y[0]
+
+
+print("month: ", month)
+print("year: ", year)
+# print("b: ", b)
+
+
+def cal(input):
+    print(input)
+
+
+print(calendar.month(year, month))
