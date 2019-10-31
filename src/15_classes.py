@@ -44,12 +44,13 @@ print("w: ", w)
 # YOUR CODE HERE
 
 class Geocache(Waypoint):
-    def __init__(self, name, difficulty, lat, lon):  # constructor
+    def __init__(self, name, difficulty, size, lat, lon):  # constructor
         self.difficulty = difficulty
+        self.size = size
         super().__init__(name, lat, lon)
 
     def __str__(self):
-        s = f"Name is {self.name}, difficulty is {self.difficulty} lat is {self.lat} and lon is {self.lon}\n"
+        s = f"Name is {self.name}, difficulty is {self.difficulty}, size is {self.size} lat is {self.lat} and lon is {self.lon}\n"
         return s
 
 
@@ -59,6 +60,8 @@ print("g: ", g)
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
 # YOUR CODE HERE
+w1 = Waypoint("Catacombs", 41.70505, -121.51521)
+print("w1: ", w1)
 
 
 # Without changing the following line, how can you make it print into something
@@ -71,6 +74,9 @@ print("g: ", g)
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
 
 # YOUR CODE HERE
+
+g = Geocache("Newberry Views", 1.5, 2, 44.052137, -121.41556)
+print("g: ", g)
 
 # Print it--also make this print more nicely
 
