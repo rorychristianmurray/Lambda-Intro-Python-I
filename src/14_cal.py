@@ -27,7 +27,7 @@ import argparse
 # create initial set-up for argparse
 
 parser = argparse.ArgumentParser(description="calendar tutorial")
-parser.add_argument("--m", default=1, type=int,
+parser.add_argument("m", default=1, type=int,
                     help="This is the 'month' input", nargs="*")
 parser.add_argument("--y", default=2019, type=int,
                     help="This is the 'year' input", nargs="*")
